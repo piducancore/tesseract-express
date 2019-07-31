@@ -1,0 +1,30 @@
+{
+  "name": "tesseract-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "tesseract.js": "^2.0.0-alpha.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piducancore/tesseract-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piducancore/tesseract-express/issues"
+  },
+  "homepage": "https://github.com/piducancore/tesseract-express#readme"
+}
