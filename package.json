@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.5",
-    "tesseract.js": "^2.0.0-alpha.13"
+    "express-fileupload": "^1.1.7-alpha.3",
+    "tesseract.js": "^2.1.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
