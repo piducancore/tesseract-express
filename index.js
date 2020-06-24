@@ -15,10 +15,16 @@ app.get("/", (_, res) => {
 })
 
 app.post("/upload", async (req, res) => {
-  if (!req.files) return res.status(400).send("No files were uploaded.")
   const { sampleFile } = req.files
-  const { data } = await Tesseract.recognize(sampleFile.data, "eng")
-  res.send(`<pre>${data.text}</pre>`)
+  if (!sampleFile) return res.status(400).send("No files were uploaded.")
+  try {
+    const { data } = await Tesseract.recognize(sampleFile.data, "spa+eng", {
+      logger: (m) => console.log(m),
+    })
+    res.send(`<pre>${data.text}</pre>`)
+  } catch (error) {
+    throw error
+  }
 })
 
 app.listen(process.env.PORT || 3000)
