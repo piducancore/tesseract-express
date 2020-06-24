@@ -8,21 +8,21 @@
     "express-fileupload": "^1.1.7-alpha.3",
     "tesseract.js": "^2.1.1"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/piducancore/tesseract-express.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ocr",
+    "tesseract.js",
+    "express"
+  ],
+  "author": "@piducancore",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/piducancore/tesseract-express/issues"
   },
